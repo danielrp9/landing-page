@@ -1,0 +1,89 @@
+.section3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.highlighted-text {
+    color: #ff66b2; /* Rosa */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.larger-text {
+    font-size: 1.5em; /* Ou o tamanho desejado */
+}
+
+.faded-text {
+    color: #ffffff; /* Cor apagada */
+}
+
+.installment-label {
+    font-size: 0.8em; /* Ou o tamanho desejado */
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.product-details li {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #ff66b2; /* Rosa */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Ajuste a margem para afastar da borda */
+}
+
+.circle::before {
+    content: "✔"; /* Ícone de confirmação */
+    color: #fff; /* Cor do ícone */
+    font-size: 12px; /* Tamanho do ícone */
+}
+
+.buy-now-button {
+    background-color: #2ada07; /* Rosa */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em; /* Ou o tamanho desejado */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.buy-now-button:hover {
+    background-color: #e05191; /* Tom mais claro de rosa */
+}
+
+/* Estilos modificados para envolver a parte textual em um quadrado com bordas arredondadas e fundo branco */
+.text-container {
+    background-color: #A2114E;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 50px; /* Valor reduzido para diminuir os lados do quadrado branco */
+    display: inline-block; /* Garante que o tamanho da div se ajuste ao conteúdo */
+    text-align: center; /* Centraliza o conteúdo */
+    color: #fff;
+}
+
+/* Estilos adicionados para a imagem */
+.product-image {
+    max-width: 20%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    border-radius: 10px; /* Borda arredondada para a imagem */
+    margin-bottom: 15px; /* Espaço entre a imagem e o conteúdo de texto */
+}

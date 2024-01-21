@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'Beautiful Barbies';
+    src: url('../font/Beautiful\ Barbies.otf') format('opentype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* regra CSS para o cabeçalho */
+header {
+    background-color: #FFDEE9; /* Cor do cabeçalho */
+    color: #A2114E; /* Cor do texto do cabeçalho */
+    text-align: center;
+    padding: 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Beautiful Barbies', sans-serif;
+}
+
+.logo-container img {
+    width: 50px; 
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+h1 {
+    margin: 0; /* Remover a margem padrão do h1 */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 50px; 
+    margin-right: 10px;
+}
+
+/* regra CSS para a barra fina abaixo da barra de navegação */
+.nav-divider {
+    display: flex;
+    align-items: center;
+    height: 8px;
+    background-color: #A2114E; /* Cor da barra fina */
+}
+
+.nav-divider img {
+    max-width: 250%; /* Ajusta a largura da imagem à largura do contêiner, sem ultrapassar sua largura original */
+    height: auto; /* Ajusta automaticamente a altura para manter a proporção original */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffe6e6; /* Rosa */
+    padding: 20px;
+}
+
+.left-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-column { /* quadrado*/
+    max-width: 400px;
+    background-color: #A2114E; /* Cor do quadrado com bordas arredondadas*/
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff; /* Cor da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
+}
+
+.right-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-column li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.right-column li::before {
+    content: '\2713'; /* Código do caractere do ticket de confirmação */
+    position: absolute;
+    left: 0;
+    color: #fff; /* Cor do ticket de confirmação */
+    font-size: 20px;
+}
+
+.rounded-button {
+    background-color: #4CAF50; /* Cor de fundo*/
+    color: #fff; /* Cor do texto*/
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 25px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+}
+
+/* Efeito de hover para tornar o botão mais interativo */
+.rounded-button:hover {
+    background-color: #45a049; /*cor de fundo no hover */
+}
+
+.secure-info {
+    display: flex;
+    align-items: center;
+}
+
+.secure-info img {
+    margin-right: 9px;
+}
+
+
+.lock-icon {
+    filter: brightness(0) invert(1);
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+.section-2 h4{
+    color: #D51264;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffe6e6;
+  padding: 20px;
+  flex-wrap: wrap; /* Adiciona quebra de linha em telas menores */
+}
+
+.section-3-title {
+  text-align: center;
+  color: #d31463;
+  font-family: 'Times New Roman', Times, serif;
+  flex-basis: 100%; /* Garante que ocupa 100% da largura na quebra de linha */
+}
+
+.product-container {
+  text-align: center;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #d31463;
+  color: #fff;
+  padding-top: 3%;
+}
+
+.product-container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Borda arredondada apenas no topo */
+}
+
+.product-details {
+    background-color: #A2114E; /* Cor de fundo para o título */
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Borda arredondada apenas na base */
+}
+
+.product-container h3,
+.product-container p {
+    padding: 10px;
+    margin: 0;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    text-align: center; /* Alinha o texto no centro horizontalmente */
+  }
+
+  .section-title h2 {
+    margin-bottom: 0; /* Remove a margem inferior padrão do h2 */
+  }
+
+.product-container button {
+    background-color: #48b84c;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px; /* Borda arredondada apenas na base */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section-5 {
+    background-color: #D51264;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .section-5-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-5 h2 {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    color: #ffd5d9;
+    font-size: 16px;
+  }
+  
+  .image-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .info-box {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+    background-color: D51264;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .info-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .info-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .info-text {
+    font-size: 14px;
+  }
+  
+
+.section-6 {
+    text-align: center;
+    background-color:  #A2114E;
+    padding: 20px;
+}
+.section-6 h2{
+    color: #fff;
+}
+.section-6 {
+   height: 60vh; /* ajuste da viewport */
+    margin: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.faq-button {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #D51264;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section-7 {
+    background-color: #FFDEE9;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .section-7 h2{
+    color: #d31463;
+  }
+
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinha os itens ao centro */
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .video-container {
+    position: relative;
+    width: calc(33.33% - 20px); /* Calcula a largura com margem entre os itens */
+    margin-bottom: 20px;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção de 16:9 para vídeos */
+    overflow: hidden;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .video-container {
+      width: calc(50% - 20px); /* 2 vídeos por linha em telas menores */
+    }
+  }
+
+  @media (max-width: 500px) {
+    .video-container {
+      width: calc(100% - 20px); /* 1 vídeo por linha em telas muito pequenas */
+    }
+  }
+
+
+/* Regra de consulta de mídia para dispositivos com largura menor que 430/700 pixels */
+@media (max-width: 700px) {
+    /* Section 1 */
+    .section-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column img {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        max-width: 100%;
+    }
+
+    /* Section 2 */
+    .section-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    /* Section 3 */
+    .section-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .footer-section {
+        margin: 0;
+      }
+    
+      .payment-options img {
+        max-width: 40px;
+        margin-right: 5px;
+      }
+    
+      .social-links {
+        justify-content: center;
+      }
+      .video-container {
+        max-width: 90%; /* Reduz ainda mais a largura máxima para telas menores */
+        margin: 0 auto; /* Centraliza o container na tela */
+      }
+    }
+

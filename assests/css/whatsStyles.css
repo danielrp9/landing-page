@@ -1,0 +1,78 @@
+/* Estilos do botão fixo do WhatsApp */
+.whatsapp-button {
+    position: fixed; /* Define a posição fixa para que o botão fique fixo na tela */
+    bottom: 20px; /* Define a distância do botão em relação ao fundo da tela */
+    right: 20px; /* Define a distância do botão em relação à direita da tela */
+    width: 60px; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+    background-color: #25d366; /* Define a cor de fundo do botão */
+    border-radius: 50%; /* Define o raio do canto das bordas do botão (forma circular) */
+    display: flex; /* Define o botão como um flex container */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do botão */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro do botão */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+    z-index: 9999; /* Define a ordem de empilhamento do botão acima de outros elementos */
+    text-decoration: none; /* Remove a decoração do link (sublinhado) */
+  }
+  
+  /* Estilos para o ícone do WhatsApp dentro do botão */
+  .whatsapp-icon {
+    width: 30px; /* Define a largura do ícone do WhatsApp */
+    height: 30px; /* Define a altura do ícone do WhatsApp */
+    fill: #fff; /* Define a cor de preenchimento do ícone como branco */
+  }
+  
+  /* Estilos para a sobreposição do popup */
+  .popup-overlay {
+    display: none; /* Esconde a sobreposição do popup por padrão */
+    position: fixed; /* Define a posição como fixa para que a sobreposição fique fixa na tela */
+    top: 0; /* Define a distância do topo da tela */
+    left: 0; /* Define a distância da esquerda da tela */
+    width: 100%; /* Define a largura da sobreposição como 100% */
+    height: 100%; /* Define a altura da sobreposição como 100% */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo da sobreposição com um tom de preto semitransparente */
+    z-index: 9999; /* Define a ordem de empilhamento da sobreposição acima de outros elementos */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente dentro da sobreposição */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro da sobreposição */
+  }
+  
+  /* Estilos para o conteúdo do popup */
+  .popup-content {
+    background-color: #fff; /* Define a cor de fundo do conteúdo do popup */
+    padding: 20px; /* Define o espaçamento interno do conteúdo do popup */
+    max-width: 400px; /* Define a largura máxima do conteúdo do popup como 400px */
+    text-align: center; /* Centraliza o texto dentro do conteúdo do popup */
+    border-radius: 5px; /* Define o raio do canto das bordas do conteúdo do popup */
+  }
+  
+  /* Estilos para o botão de fechar o popup */
+  .popup-close {
+    position: absolute; /* Define a posição como absoluta para que o botão fique posicionado livremente */
+    top: 10px; /* Define a distância do topo do popup */
+    right: 10px; /* Define a distância da direita do popup */
+    width: 60px; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+    color: #888; /* Define a cor do ícone de fechar como cinza claro */
+    cursor: pointer; /* Define o cursor do mouse como "apontador" para indicar que o botão é clicável */
+    border-radius: 50%; /* Define o raio do canto das bordas do botão (forma circular) */
+  }
+  
+  /* Estilos para os botões do WhatsApp no popup */
+  .whatsapp-buttons {
+    display: flex; /* Define os botões como flex container */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Define a margem superior para separar os botões de outros elementos */
+  }
+  
+  /* Estilos para cada botão do WhatsApp no popup */
+  .whatsapp-buttons a {
+    margin: 0 10px; /* Define a margem entre os botões */
+    padding: 10px 20px; /* Define o espaçamento interno dos botões */
+    background-color: #25D366; /* Define a cor de fundo dos botões */
+    color: #fff; /* Define a cor do texto dos botões como branco */
+    text-decoration: none; /* Remove a decoração do link (sublinhado) */
+    border-radius: 5px; /* Define o raio do canto das bordas dos botões */
+  }
+
+
+
